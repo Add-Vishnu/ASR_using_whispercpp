@@ -36,7 +36,7 @@ def transcribe(audio,):
     
     print("--------------------------")
     print(f"Execution time: {end_time - start_time} seconds")
-    return transcription
+    return transcription, (end_time - start_time)
 
 
 
@@ -45,6 +45,7 @@ demo = gr.Interface(
     gr.Audio(source="microphone"),
     # gr.Audio(sources=["microphone"]),
     gr.Textbox(label="CLI_Transcription")
+    gr.Textbox(label="Time taken for Transcription")
 )
 
 demo.launch()
