@@ -44,8 +44,7 @@ demo = gr.Interface(
     transcribe,
     gr.Audio(source="microphone"),
     # gr.Audio(sources=["microphone"]),
-    gr.Textbox(label="CLI_Transcription")
-    gr.Textbox(label="Time taken for Transcription")
+    outputs=[gr.Textbox(label="CLI_Transcription"),gr.Textbox(label="Time taken for Transcription")]
 )
 
 demo.launch()
