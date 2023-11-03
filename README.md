@@ -16,6 +16,9 @@ pip install -r requirements.txt
 ## Download the models
 - Download_link : https://ggml.ggerganov.com/
 
+![image](https://github.com/Add-Vishnu/ASR_using_whispercpp/assets/139844342/38b2f2d1-31b4-41d1-a024-fc7d7f860335)
+
+
 ## Run app.py
 
 ## Errors
